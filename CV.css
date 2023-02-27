@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+.contenedor .left{
+    padding: 20px;
+    background-color: rgb(194, 150, 150);
+    max-width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.contenedor .left .fotocv{
+    text-align: center;
+}
+.contenedor .left .fotocv img {
+    width: 160px;
+    height: 140px;
+    margin-right: 5px;
+    border-radius: 50%;
+    
+}
+
+
+.contenedor .left .DatosPersonales{
+    padding: 10px;
+    text-align: left;
+
+    
+}
+.contenedor .left .h2 {
+    text-align: center;
+}
+
+
+
+
+.bloque{
+    width: 100%;
+}
+
+.contenedor .right .bloque .panel {
+    
+    overflow: hidden  ;
+}
+.right .bloque .acordeon{
+    background-color: rgb(194, 150, 150);
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+}
+.right .bloque .acordeon:hover{
+    background-color:rgb(185, 169, 169) ;
+}
+
+.contenedor .right .bloque .panel{
+    display: none;
+}
+
+.contenedor .right .bloque.active .panel{
+    display: block;
+}
+
+
+.bloque + .bloque{
+    margin-top: 10px;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+    .contenedor {
+        display: flex;
+        padding: 10px;
+    }
+
+    .contenedor .right{
+        padding-left: 20px;
+        width: calc(100% - 350px);
+    }
+
+    .contenedor .left {
+        width: 350px;
+    }
+
+} 
